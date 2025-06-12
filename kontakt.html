@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kontakt - Reseguiden</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Kontakta oss</h1>
+        </header>
+    </body>
+
+    <div id="menu-container"></div>
+
+    <main>
+        <section>
+            <h2>Har du frågor eller tips?</h2>
+            <p>Fyll i formuläret nedan så hör vi av oss så snart vi kan.</p>
+
+            <form id="contact-form">
+                <label for="namn">Namn:</label>
+                <input type="text" id="namn" name="namn" required>
+
+                <label for="epost">E-post:</label>
+                <input type="email" id="epost" name="epost" required>
+
+                <label for="meddelande">Meddelande:</label>
+                <textarea id="meddelande" name="meddelande" rows = 5 required></textarea>
+
+                <button type="submit">Skicka</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Reseguiden</p>
+    </footer>
+
+    <script src="script.js"></script>
+</html>

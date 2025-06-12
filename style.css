@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: #222;
+    background-color: #fdfdfd;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(275deg, #ecefe5 0, #eaf4ef 53%, #eaf4f4 100%) 0 0;
+    padding: 1rem 2rem 0;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    color: #004466;
+    margin: 0;
+    user-select: none;
+}
+
+
+
+.hero {
+    background-image: url('bilder/stad.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.search-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0.8rem 1rem;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    user-select: none;
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.search-box button {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+}
+
+footer {
+    background-color: #004466;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    padding: 0 2rem 1rem;
+    background: linear-gradient(275deg, #ecefe5 0, #eaf4ef 53%, #eaf4f4 100%) 0 0;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.menu-left {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-left li a {
+    text-decoration: none;
+    color: #004466;
+    font-weight: bold;
+    font-size: 0.95rem;
+    user-select: none;
+}
+
+.menu-left li a:hover {
+    text-decoration: underline;
+}
+
+.menu-right {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    color: #004466;
+}
+
+img.small-img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+    .top-menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-right {
+        align-self: flex-end;
+        margin-top: 1rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
