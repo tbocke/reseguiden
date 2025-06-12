@@ -14,8 +14,9 @@
 
             <div id="menu-container"></div>
             <div class="hero">
-                <form class="search-box">
-                    <input type="text" placeholder="Hej, vad kan vi hjälpa dig med?">
+                <form class="search-box" autocomplete="off">
+                    <input type="text" id="search-input" placeholder="Hej, vad kan vi hjälpa dig med?">
+                    <ul id="suggestions"></ul>
                     <button type="submit">Sök</button>
                 </form>
             </div>
